@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-07-20T09:47:18.730Z</updated>
+  <updated>2020-07-21T14:51:19.282Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -18,12 +18,12 @@
   
   <entry>
     <title>Appium iOS端UI自动化测试总结（Mac）</title>
-    <link href="http://yoursite.com/2020/07/20/First/"/>
-    <id>http://yoursite.com/2020/07/20/First/</id>
+    <link href="http://yoursite.com/2020/07/20/Appium%20iOS%E7%AB%AFUI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%80%BB%E7%BB%93%EF%BC%88Mac%EF%BC%89/"/>
+    <id>http://yoursite.com/2020/07/20/Appium%20iOS%E7%AB%AFUI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%80%BB%E7%BB%93%EF%BC%88Mac%EF%BC%89/</id>
     <published>2020-07-20T15:01:56.000Z</published>
-    <updated>2020-07-20T09:47:18.730Z</updated>
+    <updated>2020-07-21T14:51:19.282Z</updated>
     
-    <content type="html"><![CDATA[<p>一、安装appium<br>1、首先确保电脑上安装了node<br>brew install node<br>2、安装其他依赖环境<br>brew install libimobiledevice –HEAD //用于获取iOS设备信息<br>npm install -g ios-deploy            //用于查看iOS设备应用信息<br>brew install carthage                //项目依赖管理，webdriveragent使用<br>3、安装appium<br>brew install appium<br>npm install -g appium-doctor         //安装后执行appium-doctor查看appium环境是否ok</p><p>二、appium webdriveragent项目配置修改<br>1、切到/usr/local/lib/node_modules/appium/node_modules/appium-webdriveragent目录下；<br>2、打开webdriveragent.xcodeproj项目；<br>3、在TARGETS中切换到WebDriverAgentRunner，修改证书信息；<br>4、切换Scheme到WebDriverAgentRunner<br>5、点击导航栏中Product-&gt;Test或者点击command+U运行项目<br>6、控制台打印中倒数第一行或第二行末尾以ip结尾并且手机上安装webdriveragentApp说明运行成功了。</p><p>三、通过Python代码实现UI自动化测试<br>1、启动appium服务<br>安装subprocess模块，</p>]]></content>
+    <content type="html"><![CDATA[<p>一、安装appium<br>1、首先确保电脑上安装了node<br>brew install node<br>2、安装其他依赖环境<br>brew install libimobiledevice –HEAD //用于获取iOS设备信息<br>npm install -g ios-deploy            //用于查看iOS设备应用信息<br>brew install carthage                //项目依赖管理，webdriveragent使用<br>3、安装appium<br>brew install appium<br>npm install -g appium-doctor         //安装后执行appium-doctor查看appium环境是否ok</p><p>二、appium webdriveragent项目配置修改<br>1、切到/usr/local/lib/node_modules/appium/node_modules/appium-webdriveragent目录下；<br>2、打开webdriveragent.xcodeproj项目；<br>3、在TARGETS中切换到WebDriverAgentRunner，修改证书信息；<br>4、切换Scheme到WebDriverAgentRunner<br>5、点击导航栏中Product-&gt;Test或者点击command+U运行项目<br>6、控制台打印中倒数第一行或第二行末尾以ip结尾并且手机上安装webdriveragentApp说明运行成功了。</p><p>三、通过Python代码实现UI自动化测试<br>1、启动appium服务<br>安装subprocess模块，使用subprocess.Popen(‘appium -a 0.0.0.0 -p 8100’, shell=True)启动appium服务<br>注意这句代码执行后需要sleep几秒等待开启appium服务<br>A、单个手机启动appium服务需要执行命令’appium -a 0.0.0.0 -p 8100’<br>B、多个手机启动appium服务需要多个’appium -a 0.0.0.0 -p 8100 -bp 3333 - webdriveragent-port 1233 –udid 设备udid’命令用‘&amp;’拼接<br>2、获取设备udid</p>]]></content>
     
     <summary type="html">
     
