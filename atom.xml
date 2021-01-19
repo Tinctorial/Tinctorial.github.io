@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-07-21T14:51:19.282Z</updated>
+  <updated>2021-01-08T08:59:28.378Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,19 +17,20 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Appium iOS端UI自动化测试总结（Mac）</title>
-    <link href="http://yoursite.com/2020/07/20/Appium%20iOS%E7%AB%AFUI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%80%BB%E7%BB%93%EF%BC%88Mac%EF%BC%89/"/>
-    <id>http://yoursite.com/2020/07/20/Appium%20iOS%E7%AB%AFUI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%80%BB%E7%BB%93%EF%BC%88Mac%EF%BC%89/</id>
-    <published>2020-07-20T15:01:56.000Z</published>
-    <updated>2020-07-21T14:51:19.282Z</updated>
+    <title>Mac版Fiddler在iPhone上抓包</title>
+    <link href="http://yoursite.com/2021/01/08/Mac%E7%89%88Fiddler%E5%9C%A8iPhone%E4%B8%8A%E6%8A%93%E5%8C%85/"/>
+    <id>http://yoursite.com/2021/01/08/Mac%E7%89%88Fiddler%E5%9C%A8iPhone%E4%B8%8A%E6%8A%93%E5%8C%85/</id>
+    <published>2021-01-08T08:17:39.000Z</published>
+    <updated>2021-01-08T08:59:28.378Z</updated>
     
-    <content type="html"><![CDATA[<p>一、安装appium<br>1、首先确保电脑上安装了node<br>brew install node<br>2、安装其他依赖环境<br>brew install libimobiledevice –HEAD //用于获取iOS设备信息<br>npm install -g ios-deploy            //用于查看iOS设备应用信息<br>brew install carthage                //项目依赖管理，webdriveragent使用<br>3、安装appium<br>brew install appium<br>npm install -g appium-doctor         //安装后执行appium-doctor查看appium环境是否ok</p><p>二、appium webdriveragent项目配置修改<br>1、切到/usr/local/lib/node_modules/appium/node_modules/appium-webdriveragent目录下；<br>2、打开webdriveragent.xcodeproj项目；<br>3、在TARGETS中切换到WebDriverAgentRunner，修改证书信息；<br>4、切换Scheme到WebDriverAgentRunner<br>5、点击导航栏中Product-&gt;Test或者点击command+U运行项目<br>6、控制台打印中倒数第一行或第二行末尾以ip结尾并且手机上安装webdriveragentApp说明运行成功了。</p><p>三、通过Python代码实现UI自动化测试<br>1、启动appium服务<br>安装subprocess模块，使用subprocess.Popen(‘appium -a 0.0.0.0 -p 8100’, shell=True)启动appium服务<br>注意这句代码执行后需要sleep几秒等待开启appium服务<br>A、单个手机启动appium服务需要执行命令’appium -a 0.0.0.0 -p 8100’<br>B、多个手机启动appium服务需要多个’appium -a 0.0.0.0 -p 8100 -bp 3333 - webdriveragent-port 1233 –udid 设备udid’命令用‘&amp;’拼接<br>2、获取设备udid</p>]]></content>
+    <content type="html"><![CDATA[<p>一、Fiddler中的操作<br>1、在设置-HTTPS中的Advanced Settings中下载证书并使用隔空投送发到手机上<br>2、在设备-Connections中Fiddler listens on port 中配置端口号</p><p>二、在手机上安装该证书<br>三、在手机设置–通用–关于本机–证书信任设置中信任该证书<br>这一步是为了配置代理后手机能正常上网<br>四、在手机连接的网络中设置配置代理<br>在代理中选择手动，服务器填写电脑连接的网络IP，端口填写fiddler中设置的端口号<br>五、手机操作网络请求后在fiddler上查看抓到的包</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;一、安装appium&lt;br&gt;1、首先确保电脑上安装了node&lt;br&gt;brew install node&lt;br&gt;2、安装其他依赖环境&lt;br&gt;brew install libimobiledevice –HEAD //用于获取iOS设备信息&lt;br&gt;npm install -g 
+        &lt;p&gt;一、Fiddler中的操作&lt;br&gt;1、在设置-HTTPS中的Advanced Settings中下载证书并使用隔空投送发到手机上&lt;br&gt;2、在设备-Connections中Fiddler listens on port 中配置端口号&lt;/p&gt;
+&lt;p&gt;二、在手机上安装该证书&lt;b
       
     
     </summary>
@@ -39,19 +40,19 @@
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2020/01/05/hello-world/"/>
-    <id>http://yoursite.com/2020/01/05/hello-world/</id>
-    <published>2020-01-05T13:26:59.346Z</published>
-    <updated>2020-01-05T13:26:59.346Z</updated>
+    <title>Appium iOS端UI自动化测试总结（Mac）</title>
+    <link href="http://yoursite.com/2020/07/20/Appium%20iOS%E7%AB%AFUI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%80%BB%E7%BB%93%EF%BC%88Mac%EF%BC%89/"/>
+    <id>http://yoursite.com/2020/07/20/Appium%20iOS%E7%AB%AFUI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%80%BB%E7%BB%93%EF%BC%88Mac%EF%BC%89/</id>
+    <published>2020-07-20T15:01:56.000Z</published>
+    <updated>2020-07-22T07:23:01.605Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>一、安装appium<br>1、首先确保电脑上安装了node<br>brew install node<br>2、安装其他依赖环境<br>brew install libimobiledevice –HEAD //用于获取iOS设备信息<br>npm install -g ios-deploy            //用于查看iOS设备应用信息<br>brew install carthage                //项目依赖管理，webdriveragent使用<br>3、安装appium<br>brew install appium<br>npm install -g appium-doctor         //安装后执行appium-doctor查看appium环境是否ok</p><p>二、appium webdriveragent项目配置修改<br>1、切到/usr/local/lib/node_modules/appium/node_modules/appium-webdriveragent目录下；<br>2、打开webdriveragent.xcodeproj项目；<br>3、在TARGETS中切换到WebDriverAgentRunner，修改证书信息；<br>4、切换Scheme到WebDriverAgentRunner<br>5、点击导航栏中Product-&gt;Test或者点击command+U运行项目<br>6、控制台打印中倒数第一行或第二行末尾以ip结尾并且手机上安装webdriveragentApp说明运行成功了。</p><p>三、通过Python代码实现UI自动化测试<br>1、启动appium服务<br>安装subprocess模块，使用subprocess.Popen(‘appium -a 0.0.0.0 -p 8100’, shell=True)启动appium服务<br>注意这句代码执行后需要sleep几秒等待开启appium服务<br>A、单个手机启动appium服务需要执行命令’appium -a 0.0.0.0 -p 8100’<br>B、多个手机启动appium服务需要多个’appium -a 0.0.0.0 -p 8100 -bp 3333 - webdriveragent-port 1233 –udid 设备udid’命令用‘&amp;’拼接<br>2、获取设备udid<br>使用subprocess模块，subprocess.Popen(‘ios-deploy -c’, shell=True)</p><p>知识点：<br>1、获取iOS控件xpath<br>问题：一般的iOS控件xpath都非常非常长，而且有时候复制粘贴后不一定能找到<br>解决方法：可以在iOS源码中给控件加上accessibilityIdentifier属性值，如button.accessibilityIdentifier=@”控件”,那这个控件的xpath就是“控件”，这样就解决了iOS界面元素不好定位的问题；<br>2、多设备并发执行脚本<br>首先要根据设备数及设备udid开启appium服务，三-1-B中有介绍，然后是每个设备打开webdriver.open获取到的webdriver对象可以和udid保存在一个字典里，后边需要控制哪个设备就从字典里根据设备udid获取webdriver对象；<br>3、自动化测试中开启了大量服务，可以再不用服务的时候将服务kill掉，‘ps -ef | grep appium’ 该命令可以获取当前开启的所有appium服务，根据返回值中的进程号一一kill掉就行了；</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+        &lt;p&gt;一、安装appium&lt;br&gt;1、首先确保电脑上安装了node&lt;br&gt;brew install node&lt;br&gt;2、安装其他依赖环境&lt;br&gt;brew install libimobiledevice –HEAD //用于获取iOS设备信息&lt;br&gt;npm install -g 
       
     
     </summary>
