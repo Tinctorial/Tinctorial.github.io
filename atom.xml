@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2021-01-29T06:46:39.105Z</updated>
+  <updated>2021-01-29T07:36:19.736Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,16 +21,39 @@
     <link href="http://yoursite.com/2021/01/29/Mac%E4%BD%BF%E7%94%A8Fiddler%E5%9C%A8iPhone%E4%B8%8A%E6%8A%93%E5%8C%85/"/>
     <id>http://yoursite.com/2021/01/29/Mac%E4%BD%BF%E7%94%A8Fiddler%E5%9C%A8iPhone%E4%B8%8A%E6%8A%93%E5%8C%85/</id>
     <published>2021-01-29T06:44:47.000Z</published>
-    <updated>2021-01-29T06:46:39.105Z</updated>
+    <updated>2021-01-29T07:36:19.736Z</updated>
     
-    <content type="html"><![CDATA[<p>1、在设置-HTTPS中的Advanced Settings中下载证书并使用隔空投送发到手机上<br>2、在设置-Connections中Fiddler listens on port 中配置端口号</p><p><img src="/Users/zhangchaofei/Desktop/ZCFBlog/source/_posts/Mac%E4%BD%BF%E7%94%A8Fiddler%E5%9C%A8iPhone%E4%B8%8A%E6%8A%93%E5%8C%85/FiddlerImg.png" alt="Fiddler_Picture"></p><p>二、在手机上安装该证书</p><p>三、在手机设置–通用–关于本机–证书信任设置中信任该证书<br>这一步是为了配置代理后手机能正常上网</p><p>四、在手机连接的网络中设置配置代理<br>在代理中选择手动，服务器填写电脑连接的网络IP，端口填写fiddler中设置的端口号</p><p>五、手机操作网络请求后在fiddler上查看抓到的包</p>]]></content>
+    <content type="html"><![CDATA[<p>1、在设置-HTTPS中的Advanced Settings中下载证书并使用隔空投送发到手机上<br>2、在设置-Connections中Fiddler listens on port 中配置端口号</p><p><img src="http://m.qpic.cn/psc?/V54IeGQX3PNJTK1ZqKmQ2aEI5c3TUUqV/45NBuzDIW489QBoVep5mcarzqilE5Y5ZVkmzqSpmO7ZzYoMzDC0Akcd1*jhgvEU3yg8UAIJ*lewWrWKOVogk9iZafkW.P26xHw94YPSeXcM!/b&bo=Rgc4BAAAAAADJ38!&rf=viewer_4" alt="FiddlerImg"></p><p>二、在手机上安装该证书</p><p>三、在手机设置–通用–关于本机–证书信任设置中信任该证书<br>这一步是为了配置代理后手机能正常上网</p><p>四、在手机连接的网络中设置配置代理<br>在代理中选择手动，服务器填写电脑连接的网络IP，端口填写fiddler中设置的端口号</p><p>五、手机操作网络请求后在fiddler上查看抓到的包</p>]]></content>
     
     <summary type="html">
     
       
       
         &lt;p&gt;1、在设置-HTTPS中的Advanced Settings中下载证书并使用隔空投送发到手机上&lt;br&gt;2、在设置-Connections中Fiddler listens on port 中配置端口号&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Users/zhangchaofei/
+&lt;p&gt;&lt;img src=&quot;http://m.qpic.cn/psc
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Mac使用Fiddler抓包iPhone.md</title>
+    <link href="http://yoursite.com/2021/01/29/Mac%E4%BD%BF%E7%94%A8Fiddler%E6%8A%93%E5%8C%85iPhone-md/"/>
+    <id>http://yoursite.com/2021/01/29/Mac%E4%BD%BF%E7%94%A8Fiddler%E6%8A%93%E5%8C%85iPhone-md/</id>
+    <published>2021-01-29T03:20:54.000Z</published>
+    <updated>2021-01-29T07:25:21.444Z</updated>
+    
+    <content type="html"><![CDATA[<p>一、Fiddler中的操作<br>1、在设置-HTTPS中的Advanced Settings中下载证书并使用隔空投送发到手机上<br>2、在设备-Connections中Fiddler listens on port 中配置端口号</p><p><img src="https://raw.githubusercontent.com/Tinctorial/Tinctorial.github.io/master/2021/01/29/Mac%E4%BD%BF%E7%94%A8Fiddler%E5%9C%A8iPhone%E4%B8%8A%E6%8A%93%E5%8C%85/FiddlerImg.png" alt="FiddlerImg"></p><p>二、在手机上安装该证书<br>三、在手机设置–通用–关于本机–证书信任设置中信任该证书<br>这一步是为了配置代理后手机能正常上网<br>四、在手机连接的网络中设置配置代理<br>在代理中选择手动，服务器填写电脑连接的网络IP，端口填写fiddler中设置的端口号<br>五、手机操作网络请求后在fiddler上查看抓到的包</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;一、Fiddler中的操作&lt;br&gt;1、在设置-HTTPS中的Advanced Settings中下载证书并使用隔空投送发到手机上&lt;br&gt;2、在设备-Connections中Fiddler listens on port 中配置端口号&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;htt
       
     
     </summary>
