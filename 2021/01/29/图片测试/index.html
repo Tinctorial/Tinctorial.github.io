@@ -83,17 +83,19 @@
 
 
 
-<meta name="description" content="一、安装appium1、首先确保电脑上安装了nodebrew install node2、安装其他依赖环境brew install libimobiledevice –HEAD &#x2F;&#x2F;用于获取iOS设备信息npm install -g ios-deploy            &#x2F;&#x2F;用于查看iOS设备应用信息brew install carthage                &#x2F;&#x2F;项目依赖管理，">
+<meta name="description" content="图片测试测试测试">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Appium iOS端UI自动化测试总结（Mac）">
-<meta property="og:url" content="http://yoursite.com/2020/07/20/Appium%20iOS%E7%AB%AFUI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%80%BB%E7%BB%93%EF%BC%88Mac%EF%BC%89/index.html">
+<meta property="og:title" content="图片测试">
+<meta property="og:url" content="http://yoursite.com/2021/01/29/%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="一、安装appium1、首先确保电脑上安装了nodebrew install node2、安装其他依赖环境brew install libimobiledevice –HEAD &#x2F;&#x2F;用于获取iOS设备信息npm install -g ios-deploy            &#x2F;&#x2F;用于查看iOS设备应用信息brew install carthage                &#x2F;&#x2F;项目依赖管理，">
+<meta property="og:description" content="图片测试测试测试">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-07-20T15:01:56.000Z">
-<meta property="article:modified_time" content="2020-07-22T07:23:01.605Z">
+<meta property="og:image" content="http://yoursite.com/2021/01/29/%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/FiddlerImg.png">
+<meta property="article:published_time" content="2021-01-29T03:51:07.000Z">
+<meta property="article:modified_time" content="2021-01-29T03:52:15.025Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2021/01/29/%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/FiddlerImg.png">
 
 
 
@@ -123,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/07/20/Appium iOS端UI自动化测试总结（Mac）/"/>
+  <link rel="canonical" href="http://yoursite.com/2021/01/29/图片测试/"/>
 
 
 
 
 
-  <title>Appium iOS端UI自动化测试总结（Mac） | Hexo</title>
+  <title>图片测试 | Hexo</title>
   
 
 
@@ -236,7 +238,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/20/Appium%20iOS%E7%AB%AFUI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%80%BB%E7%BB%93%EF%BC%88Mac%EF%BC%89/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/01/29/%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -253,7 +255,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Appium iOS端UI自动化测试总结（Mac）</h1>
+          <h1 class="post-title" itemprop="name headline">图片测试</h1>
         
 
         <div class="post-meta">
@@ -265,8 +267,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-07-20T23:01:56+08:00">
-                2020-07-20
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-01-29T11:51:07+08:00">
+                2021-01-29
               </time>
             
 
@@ -303,10 +305,8 @@
       
 
       
-        <p>一、安装appium<br>1、首先确保电脑上安装了node<br>brew install node<br>2、安装其他依赖环境<br>brew install libimobiledevice –HEAD //用于获取iOS设备信息<br>npm install -g ios-deploy            //用于查看iOS设备应用信息<br>brew install carthage                //项目依赖管理，webdriveragent使用<br>3、安装appium<br>brew install appium<br>npm install -g appium-doctor         //安装后执行appium-doctor查看appium环境是否ok</p>
-<p>二、appium webdriveragent项目配置修改<br>1、切到/usr/local/lib/node_modules/appium/node_modules/appium-webdriveragent目录下；<br>2、打开webdriveragent.xcodeproj项目；<br>3、在TARGETS中切换到WebDriverAgentRunner，修改证书信息；<br>4、切换Scheme到WebDriverAgentRunner<br>5、点击导航栏中Product-&gt;Test或者点击command+U运行项目<br>6、控制台打印中倒数第一行或第二行末尾以ip结尾并且手机上安装webdriveragentApp说明运行成功了。</p>
-<p>三、通过Python代码实现UI自动化测试<br>1、启动appium服务<br>安装subprocess模块，使用subprocess.Popen(‘appium -a 0.0.0.0 -p 8100’, shell=True)启动appium服务<br>注意这句代码执行后需要sleep几秒等待开启appium服务<br>A、单个手机启动appium服务需要执行命令’appium -a 0.0.0.0 -p 8100’<br>B、多个手机启动appium服务需要多个’appium -a 0.0.0.0 -p 8100 -bp 3333 - webdriveragent-port 1233 –udid 设备udid’命令用‘&amp;’拼接<br>2、获取设备udid<br>使用subprocess模块，subprocess.Popen(‘ios-deploy -c’, shell=True)</p>
-<p>知识点：<br>1、获取iOS控件xpath<br>问题：一般的iOS控件xpath都非常非常长，而且有时候复制粘贴后不一定能找到<br>解决方法：可以在iOS源码中给控件加上accessibilityIdentifier属性值，如button.accessibilityIdentifier=@”控件”,那这个控件的xpath就是“控件”，这样就解决了iOS界面元素不好定位的问题；<br>2、多设备并发执行脚本<br>首先要根据设备数及设备udid开启appium服务，三-1-B中有介绍，然后是每个设备打开webdriver.open获取到的webdriver对象可以和udid保存在一个字典里，后边需要控制哪个设备就从字典里根据设备udid获取webdriver对象；<br>3、自动化测试中开启了大量服务，可以再不用服务的时候将服务kill掉，‘ps -ef | grep appium’ 该命令可以获取当前开启的所有appium服务，根据返回值中的进程号一一kill掉就行了；</p>
+        <p>图片测试测试测试</p>
+<p><img src="%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/FiddlerImg.png" alt="FiddlerImg"></p>
 
       
     </div>
@@ -331,15 +331,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2021/01/29/Mac%E4%BD%BF%E7%94%A8Fiddler%E6%8A%93%E5%8C%85iPhone/" rel="next" title="Mac使用Fiddler抓包iPhone">
+                <i class="fa fa-chevron-left"></i> Mac使用Fiddler抓包iPhone
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2021/01/08/Mac%E7%89%88Fiddler%E5%9C%A8iPhone%E4%B8%8A%E6%8A%93%E5%8C%85/" rel="prev" title="Mac版Fiddler在iPhone上抓包">
-                Mac版Fiddler在iPhone上抓包 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
